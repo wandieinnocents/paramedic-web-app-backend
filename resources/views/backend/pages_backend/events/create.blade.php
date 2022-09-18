@@ -105,7 +105,7 @@
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Description</label>
-                                        <textarea class="form-control" name="description" id="exampleFormControlTextarea5"
+                                        <textarea class="form-control" name="event_description" id="exampleFormControlTextarea5"
                                             placeholder="Enter Event Description" rows="3"></textarea>
                                     </div>
                                 </div>
