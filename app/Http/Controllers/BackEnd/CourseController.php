@@ -4,6 +4,7 @@ namespace App\Http\Controllers\BackEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class CourseController extends Controller
 {
@@ -24,7 +25,8 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages_backend.courses.create');
+
     }
 
     /**
@@ -35,7 +37,38 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+         
+        $validatedData = $request->validate([
+            
+            'course_photo' => 'required|mimes:doc,pdf,docx,zip,jpeg,jpg,csv,txt,xlx,xls,png',
+            
+        ]);
+
+    $course = new Course();
+    $course->course_school_category = $request->course_school_category;
+    $course->course_name            = $request->course_name;
+    $course->description            = $request->description;
+    $course->course_level           = $request->course_level;
+    $course->course_years           = $request->course_years;
+    $course->course_price_range     = $request->course_price_range;
+
+    // photo
+    if($request->hasfile('course_photo')){
+        $file                       = $request->file('course_photo');
+        $extension                  = $file->getClientOriginalExtension();  //get image extension
+        $filename                   = time() . '.' .$extension;
+        $file->move('uploads/course_photos/',$filename);
+        $course->course_photo   = url('uploads' . '/course_photos/'  . $filename);
+    }
+
+    // else{
+    //     $course->course_photo = '';
+    // }
+    // dd($course);
+    $course->save();
+
+    return redirect('/courses');
     }
 
     /**

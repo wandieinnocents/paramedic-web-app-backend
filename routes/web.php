@@ -158,6 +158,8 @@ Route::resource('/project_categories', 'App\Http\Controllers\BackEnd\ProjectCate
 Route::resource('/projects', 'App\Http\Controllers\BackEnd\ProjectController');
 // volunteers
 Route::resource('/volunteers', 'App\Http\Controllers\BackEnd\BackEndVolunteerController');
+// course
+Route::resource('/courses', 'App\Http\Controllers\BackEnd\CourseController');
 
 });
 

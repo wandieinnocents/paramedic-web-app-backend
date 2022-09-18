@@ -194,18 +194,7 @@
                         <span data-key="t-apps">Courses</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li>
-                            <a href="/project_categories/create">
-                                <span data-key="t-calendar">Add School Category</span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="/project_categories">
-                                <span data-key="t-calendar">View School Categories</span>
-                            </a>
-                        </li>
-
+                       
                         <li>
                             <a href="/projects/create">
                                 <span data-key="t-chat">Add Course</span>
