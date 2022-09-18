@@ -187,6 +187,62 @@
                     </ul>
                 </li>
 
+                {{-- courses --}}
+                 <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i class="fas fa-university"></i>
+                        <span data-key="t-apps">Courses</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li>
+                            <a href="/project_categories/create">
+                                <span data-key="t-calendar">Add School Category</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/project_categories">
+                                <span data-key="t-calendar">View School Categories</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/projects/create">
+                                <span data-key="t-chat">Add Course</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/projects">
+                                <span data-key="t-chat">View Course</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                {{-- events --}}
+                 <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i class="fas fa-university"></i>
+                        <span data-key="t-apps">Events</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        
+
+                        <li>
+                            <a href="/projects/create">
+                                <span data-key="t-chat">Add Event</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/projects">
+                                <span data-key="t-chat">View Events</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
                 {{-- Posts --}}
                 <!-- Posts -->
                 <li>
