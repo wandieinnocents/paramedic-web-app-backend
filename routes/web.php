@@ -161,6 +161,9 @@ Route::resource('/volunteers', 'App\Http\Controllers\BackEnd\BackEndVolunteerCon
 // course
 Route::resource('/courses', 'App\Http\Controllers\BackEnd\CourseController');
 
+// events
+Route::resource('/events', 'App\Http\Controllers\BackEnd\EventController');
+
 });
 
 

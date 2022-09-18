@@ -4,6 +4,8 @@ namespace App\Http\Controllers\BackEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Event;
+
 
 class EventController extends Controller
 {
@@ -24,7 +26,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.pages_backend.events.create');
     }
 
     /**

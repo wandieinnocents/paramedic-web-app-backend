@@ -119,12 +119,12 @@
 
                                         <div class="col-md-4">
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#editFoodOrder{{ $course->id }}"
+                                                data-bs-target="#editcourseOrder{{ $course->id }}"
                                                 data-bs-whatever="@getbootstrap"><i class="fas fa-pencil-alt "></i></button>
 
                                         </div>
 
-                                        <!-- delete food menu -->
+                                        <!-- delete course menu -->
                                         <div class="col-md-4">
                                             <form action="{{ route('courses.destroy', $course->id) }}" method="post">
                                                 @csrf
@@ -185,7 +185,7 @@
                                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close
                                             </button>
                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#editFoodOrder{{ $course->id }}"
+                                                data-bs-target="#editcourseOrder{{ $course->id }}"
                                                 data-bs-whatever="@getbootstrap">Edit course</button>
                                         </div>
                                     </div>
@@ -197,8 +197,8 @@
 
 
                             <!-- edit  Course MENU DETAILS MODEL -->
-                            <div class="modal fade" id="editFoodOrder{{ $course->id }}" tabindex="-1"
-                                aria-labelledby="editFoodOrderLabel" style="display: none;" aria-hidden="true">
+                            <div class="modal fade" id="editcourseOrder{{ $course->id }}" tabindex="-1"
+                                aria-labelledby="editcourseOrderLabel" style="display: none;" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
