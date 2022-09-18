@@ -41,6 +41,7 @@ Add Course
                                                     <div class="mb-3">
                                                     <label class="form-label" for="validationCustom01">School Category</label>
                                                     <select name="course_school_category" class="form-select">
+                                                           <option value="">Select </option>
                                                             <option value="dental">Dental School</option>
                                                             <option value="nursing">Nursing School</option>
                                                     </select>
@@ -59,6 +60,7 @@ Add Course
                                                     <div class="mb-3">
                                                     <label class="form-label" for="validationCustom01">Course Level</label>
                                                     <select name="course_level" class="form-select">
+                                                           <option value="">Select </option>
                                                             <option value="certificate">Certificate</option>
                                                             <option value="diploma">Diploma</option>
                                                             <option value="barchelors">Barchelors</option>
@@ -67,8 +69,8 @@ Add Course
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="mb-3">
-                                                        <label class="form-label" for="validationCustom02">Course Years</label>
-                                                        <input type="text" class="form-control"  name="course_years" id="validationCustom02" placeholder="Enter Course years" value="" required>
+                                                        <label class="form-label" for="validationCustom02">Course Duration</label>
+                                                        <input type="text" class="form-control"  name="course_years" id="validationCustom02" placeholder="Enter Course Duration" value="" required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -93,7 +95,7 @@ Add Course
                                                         <textarea class="form-control" name="description" id="exampleFormControlTextarea5" placeholder="Enter course Description" rows="3"></textarea>
                                                     </div>
                                                 </div>
-                                            <button class="btn btn-primary" type="submit">Add Project</button>
+                                            <button class="btn btn-primary" type="submit">Add Course</button>
                                         </form>
                                     </div>
                                 </div>

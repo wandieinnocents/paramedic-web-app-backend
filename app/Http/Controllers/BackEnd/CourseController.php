@@ -15,7 +15,10 @@ class CourseController extends Controller
      */
     public function index()
     {
-        return "course";
+        $courses = Course::all();
+        $count_courses = Course::count();
+        return view('backend.pages_backend.courses.index',compact('courses','count_courses'));
+
     }
 
     /**
@@ -113,6 +116,9 @@ class CourseController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $course = Course::findOrFail($id);
+        $course->delete();
+
+        return redirect('/courses')->with('success', 'Course is successfully deleted');
     }
 }

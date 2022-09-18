@@ -1,7 +1,7 @@
 @extends('backend.layouts_backend.master')
 
 @section('title')
-Projects
+Courses
 @endsection
 
 @section('extra_styles')
@@ -29,7 +29,7 @@ Projects
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="mb-3">
-                                    <h5 class="card-title">projects <span class="text-muted fw-normal ms-2">({{ $count_projects }})</span></h5>
+                                    <h5 class="card-title">Courses <span class="text-muted fw-normal ms-2">({{ $count_courses }})</span></h5>
                                 </div>
                             </div>
 
@@ -37,7 +37,7 @@ Projects
                                 <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
                                    
                                     <div>
-                                        <a href="{{ route('projects.create') }}" class="btn bg-primary text-light"><i class="bx bx-plus me-1"></i> Add project</a>
+                                        <a href="{{ route('courses.create') }}" class="btn bg-primary text-light"><i class="bx bx-plus me-1"></i> Add course</a>
                                     </div>
                                     
                                    
@@ -73,7 +73,7 @@ Projects
                                 <tbody>
                                    
                                     
-                                @foreach($projects as $project)
+                                @foreach($courses as $course)
                                       <tr>
                                         <th scope="row">
                                             <div class="form-check font-size-16">
@@ -81,19 +81,19 @@ Projects
                                                 <label class="form-check-label" for="contacusercheck11"></label>
                                             </div>
                                         </th>
-                                        <td>{{ $project->id }}</td>
+                                        <td>{{ $course->id }}</td>
 
                                         <td>
-                                            <a href="#" class="text-body">{{ $project->project_category_r->project_category_name }} </a>
+                                            <a href="#" class="text-body">{{ $course->course_school_category }}</a>
                                         </td>
-                                        <td>{{ $project->project_name }}</td>
+                                        <td>{{ $course->course_name }}</td>
                                         <td>  
 
-                                        @if (($project->project_photo))
-                                                <a href="{!! asset($project->project_photo) !!}" target="_blank">
+                                        @if (($course->course_photo))
+                                                <a href="{!! asset($course->course_photo) !!}" target="_blank">
                                                     <img class="img-thumbnail avatar-sm rounded-circle me-2" class="user-img" style="width: 100px; height:100px;"
                                                         onerror="if (this.src != '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}') this.src = '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}';"
-                                                        src="{{ asset($project->project_photo) }}" alt="preview"
+                                                        src="{{ asset($course->course_photo) }}" alt="preview"
                                                         style="height:120px !important; width:80px !important; margin-left:20px;">
                                                 </a>
 
@@ -108,21 +108,21 @@ Projects
                                     </td> 
                                       
                                        
-                                        <td>{{ $project->project_description }}</td>
+                                        <td>{{ $course->description }}</td>
                                         <td colspan="6">
                                             <div class="row">
                                              <div class="col-md-4">
-                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $project->id }}" data-bs-whatever="@getbootstrap"><i class=" far fa-eye  "></i></button>
+                                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal{{ $course->id }}" data-bs-whatever="@getbootstrap"><i class=" far fa-eye  "></i></button>
                                             </div>
                                                 
                                             <div class="col-md-4">
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editFoodOrder{{ $project->id }}" data-bs-whatever="@getbootstrap"><i class="fas fa-pencil-alt "></i></button>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editFoodOrder{{ $course->id }}" data-bs-whatever="@getbootstrap"><i class="fas fa-pencil-alt "></i></button>
 
                                             </div>
                                             
                                             <!-- delete food menu -->
                                             <div class="col-md-4">
-                                            <form action="{{ route('projects.destroy', $project->id) }}" method="post">
+                                            <form action="{{ route('courses.destroy', $course->id) }}" method="post">
                                                         @csrf
                                                         @method('DELETE')
                                                         <a >  <button class="btn btn-danger shadow btn-xs sharp"> <span class="fa fa-trash"> </button> </a>  
@@ -144,11 +144,11 @@ Projects
 
 
                 <!-- VIEW DETAILS MODEL -->
-                <div class="modal fade" id="exampleModal{{ $project->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+                <div class="modal fade" id="exampleModal{{ $course->id }}" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">project Details</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">course Details</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                
@@ -156,19 +156,25 @@ Projects
 
                                     <div class="modal-body">
 
-                                    <img src="{{ asset($project->project_photo) }} " style="width: 100%; height:60%;">
+                                    <img src="{{ asset($course->course_photo) }} " style="width: 100%; height:60%;">
                                     <hr>
-                                    <p>Food : {{ $project->project_name }}</p>
+                                    <p>Course name : {{ $course->course_name }} </p>
+                                    <hr>
+                                    <p>Course level : {{ $course->course_level }} </p>
+                                    <hr>
+                                    <p>Course price : {{ $course->course_price_range }} </p>
+                                    <hr>
+                                    <p>Course years : {{ $course->course_years }} </p>
                                     <hr>
 
-                                    <p>Category : {{ $project->project_category_r->project_category_name }}</p>
+                                    <p>Category : {{ $course->course_school_category }}</p>
                                     <hr>
-                                    <p>Description : {{ $project->project_description }}</p>
+                                    <p>Description : {{ $course->description }}</p>
 
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close </button>
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editFoodOrder{{ $project->id }}" data-bs-whatever="@getbootstrap">Edit project</button>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editFoodOrder{{ $course->id }}" data-bs-whatever="@getbootstrap">Edit course</button>
                                     </div>
                                 </div>
                               </div>
@@ -178,12 +184,12 @@ Projects
 
 
 
-                <!-- edit  FOOD MENU DETAILS MODEL -->
-                <div class="modal fade" id="editFoodOrder{{ $project->id }}" tabindex="-1" aria-labelledby="editFoodOrderLabel" style="display: none;" aria-hidden="true">
+                <!-- edit  Course MENU DETAILS MODEL -->
+                <div class="modal fade" id="editFoodOrder{{ $course->id }}" tabindex="-1" aria-labelledby="editFoodOrderLabel" style="display: none;" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Edit project Details</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Edit course Details</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -191,43 +197,42 @@ Projects
 
                                         <!-- form update food menu items -->
                                     
-                            <form action="{{ route('projects.update', $project->id) }}" method="post" enctype="multipart/form-data">
+                            <form action="{{ route('courses.update', $course->id) }}" method="post" enctype="multipart/form-data">
                             @csrf
                             @method('PATCH')
 
                                             <div class="mb-3">
                                                     <label class="form-label" for="validationCustom01">Category</label>
 
-                                                    <select name="project_category_id" class="form-select">
-                                                           @foreach($project_categories as $project_category)
-                                                            <option value="{{ $project_category->id }}">{{ $project_category->project_category_name }}</option>
-                                                           
-                                                            @endforeach
-                                                        </select>
+                                                    <select name="course_school_category" class="form-select">
+                                                           <option value="">Select </option>
+                                                            <option value="dental">Dental School</option>
+                                                            <option value="nursing">Nursing School</option>
+                                                    </select>
 
                 
                                                     </div>
 
                                             <div class="mb-3">
                                                 <label for="recipient-name" class="col-form-label">Name:</label>
-                                                <input type="text" class="form-control" name="project_name" value="{{  $project->project_name }}" id="recipient-name">
+                                                <input type="text" class="form-control" name="course_name" value="{{  $course->course_name }}" id="recipient-name">
                                             </div>
                                             <div class="col-md-6">
                                                     <div class="mb-3">
                                                         <label class="form-label" for="validationCustom05">Photo</label>
-                                                        <input type="file" class="form-control" name="project_photo" value="{{ $project->project_photo }}"  placeholder="Zip">
+                                                        <input type="file" class="form-control" name="course_photo" value="{{ $course->course_photo }}"  placeholder="Zip">
                                                         
                                                     </div>
                                                 </div>
                                             <div class="mb-3">
                                                 <label for="message-text" class="col-form-label">Description:</label>
-                                                <textarea class="form-control" name="project_description" value="" id="message-text">{{  $project->project_description }}</textarea>
+                                                <textarea class="form-control" name="description" value="" id="message-text">{{  $course->description }}</textarea>
                                             </div>
 
                                             <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                         <!-- <button  type="submit" class="btn btn-primary">Submit</button> -->
-                                        <button class="btn btn-primary" type="submit">Update project</button>
+                                        <button class="btn btn-primary" type="submit">Update course</button>
                                     </div>
 
 
