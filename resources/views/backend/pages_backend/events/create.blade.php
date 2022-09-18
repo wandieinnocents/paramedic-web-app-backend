@@ -68,13 +68,34 @@
 
 
                                 </div>
-                                <div class="row">
+                                {{-- row --}}
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                       <div class="mb-3">
+                                            <label class="form-label" for="validationCustom02">Event Start date</label>
+                                            <input type="date" class="form-control" name="event_start_date"
+                                                id="validationCustom02" placeholder="Enter Event name" value="" required>
 
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="validationCustom02">Event End date</label>
+                                            <input type="date" class="form-control" name="event_end_date"
+                                                id="validationCustom02" placeholder="Enter event location" value="" >
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                {{-- row --}}
+                                <div class="row">
 
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label class="form-label" for="validationCustom05">Photo</label>
-                                            <input type="file" class="form-control" name="project_photo"
+                                            <label class="form-label" for="validationCustom05">Event Photo</label>
+                                            <input type="file" class="form-control" name="event_photo"
                                                 id="validationCustom05" placeholder="" required>
 
                                         </div>
@@ -84,11 +105,11 @@
                                 <div class="col-md-12">
                                     <div class="mb-3">
                                         <label class="form-label">Description</label>
-                                        <textarea class="form-control" name="project_description" id="exampleFormControlTextarea5"
-                                            placeholder="Enter Category Description" rows="3"></textarea>
+                                        <textarea class="form-control" name="description" id="exampleFormControlTextarea5"
+                                            placeholder="Enter Event Description" rows="3"></textarea>
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Add Project</button>
+                                <button class="btn btn-primary" type="submit">Add Event</button>
                             </form>
                         </div>
                     </div>

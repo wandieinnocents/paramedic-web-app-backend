@@ -37,7 +37,33 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            
+            'event_photo' => 'required|mimes:doc,pdf,docx,zip,jpeg,jpg,csv,txt,xlx,xls,png',
+            
+        ]);
+
+    $event = new Event();
+    $event->event_name          = $request->event_name;
+    $event->event_location      = $request->event_location;
+    $event->event_start_date    = $request->event_start_date;
+    $event->event_end_date      = $request->event_end_date;
+    $event->event_description   = $request->event_description;
+
+    // photo
+    if($request->hasfile('event_photo')){
+        $file               = $request->file('event_photo');
+        $extension          = $file->getClientOriginalExtension();  //get image extension
+        $filename           = time() . '.' .$extension;
+        $file->move('uploads/event_photos/',$filename);
+        $event->event_photo   = url('uploads' . '/event_photos/'  . $filename);
+    }
+
+    // else{
+    //     $event->event_photo = '';
+    // }
+    $event->save();
+
     }
 
     /**
