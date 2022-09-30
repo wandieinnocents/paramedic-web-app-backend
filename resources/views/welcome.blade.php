@@ -4,6 +4,10 @@
 The International Paramedical Institute Maya
 @endsection
 
+
+@section('extra_styles')
+
+@endsection
 @section('content')
 
  <!-- Banner Section Start -->
