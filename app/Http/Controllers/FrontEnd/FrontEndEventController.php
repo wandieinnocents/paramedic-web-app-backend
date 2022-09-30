@@ -14,7 +14,7 @@ class FrontEndEventController extends Controller
      */
     public function index()
     {
-        //
+        return view('frontend.pages_frontend.events.index');
     }
 
     /**

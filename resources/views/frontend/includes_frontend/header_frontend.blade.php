@@ -105,14 +105,14 @@
                                              <li class="menu-item-has-children">
                                                  <a href="#">Courses</a>
                                                  <ul class="sub-menu">
-                                                     <li><a href="dental.html">Dental School</a> </li>
-                                                     <li><a href="nursing.html">Nusing School</a> </li>
+                                                     <li><a href="/dental">Dental School</a> </li>
+                                                     <li><a href="/nursing">Nusing School</a> </li>
                                                      
                                                  </ul>
                                              </li>
 
                                              <li class="menu-item-has-children">
-                                                 <a href="events.html">Events</a>
+                                                 <a href="/our_events">Events</a>
                                                  <!-- <ul class="sub-menu">
                                                      <li class="menu-item-has-children right">
                                                          <a href="#">Team</a>

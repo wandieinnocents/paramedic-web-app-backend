@@ -80,6 +80,8 @@ Route::resource('join_volunteers','App\Http\Controllers\FrontEnd\FrontEndVolunte
 Route::resource('dental','App\Http\Controllers\FrontEnd\DentalCourseController');
 // nursing
 Route::resource('nursing','App\Http\Controllers\FrontEnd\NursingCourseController');
+// events
+Route::resource('our_events','App\Http\Controllers\FrontEnd\FrontEndEventController');
 
 
 
