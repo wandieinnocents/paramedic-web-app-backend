@@ -122,7 +122,7 @@
                 </li>
 
                 <!-- Services -->
-                <li>
+                {{-- <li>
                     <a href="javascript: void(0);" class="has-arrow">
                         <i class="fas fa-people-carry"></i>
                         <span data-key="t-apps">Services</span>
@@ -152,7 +152,7 @@
                             </a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
 
                 <!-- Projects -->
                 <li>
@@ -196,13 +196,13 @@
                     <ul class="sub-menu" aria-expanded="false">
                        
                         <li>
-                            <a href="/projects/create">
+                            <a href="/courses/create">
                                 <span data-key="t-chat">Add Course</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="/projects">
+                            <a href="/courses">
                                 <span data-key="t-chat">View Course</span>
                             </a>
                         </li>

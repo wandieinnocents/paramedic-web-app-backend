@@ -76,6 +76,10 @@ Route::get('newsletter','App\Http\Controllers\FrontEnd\NewsletterController@inde
 Route::post('newsletter/store','App\Http\Controllers\FrontEnd\NewsletterController@store');
 // volunteers
 Route::resource('join_volunteers','App\Http\Controllers\FrontEnd\FrontEndVolunteerController');
+// dental
+Route::resource('dental','App\Http\Controllers\FrontEnd\DentalCourseController');
+// nursing
+Route::resource('nursing','App\Http\Controllers\FrontEnd\NursingCourseController');
 
 
 
