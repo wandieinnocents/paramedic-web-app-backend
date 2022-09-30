@@ -162,19 +162,19 @@
                                              <li class="menu-item-has-children">
                                                 <a href="#">Gallery</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="photos.html">Photos</a> </li>
-                                                    <li><a href="videos.html">Videos</a> </li>
+                                                    <li><a href="/pictures">Photos</a> </li>
+                                                    <li><a href="/video_gallery">Videos</a> </li>
                                                 </ul>
                                             </li>
 
                                              <li class="menu-item-has-children">
-                                                 <a href="blog.html">Blog</a>
+                                                 <a href="/articles">Blog</a>
                                                  <ul class="sub-menu">
                                                  </ul>
                                              </li>
 
                                              <li class="menu-item-has-children">
-                                                 <a href="contacts.html">Contact</a>
+                                                 <a href="/contact/create">Contact</a>
                                                  <!-- <ul class="sub-menu">
                                                     <li><a href="contact.html">Contact One</a> </li>
                                                     <li><a href="contact2.html">Contact Two</a> </li>
@@ -184,7 +184,7 @@
                                              </li>
                                              <li class="menu-item-has-children">
                                                 <!-- <a href="#">Donate</a> -->
-                                                <a class="apply-btn" href="cart.html">Donate</a>
+                                                <a class="apply-btn" href="/donate/create">Donate</a>
                                             </li>
                                          </ul> <!-- //.nav-menu -->
                                       </nav>                                         
