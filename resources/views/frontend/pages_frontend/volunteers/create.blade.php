@@ -35,11 +35,18 @@
                         <!-- Login Form -->
                         <div class="styled-form">
                             <div id="form-messages"></div>
-                            <form id="contact-form" method="post" action="https://keenitsolutions.com/products/html/educavo/mailer.php">                               
+                            {{-- success message --}}
+                                 @if(session()->has('message'))
+                                    <div class="alert alert-info">
+                                        {{ session('message') }}
+                                    </div>
+                                @endif
+                            <form method="post" action="{{ route('join_volunteers.store') }}" enctype="multipart/form-data">  
+                            @csrf                          
                                 <div class="row clearfix">                                    
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12 mb-25">
-                                        <input type="text" id="Name" name="Full Name" value="" placeholder="Full Name" required>
+                                        <input type="text" id="Name" name="volunteer_name" value="" placeholder="Full Name" required>
                                     </div>
                                     
                                     <!-- Form Group -->
@@ -49,31 +56,36 @@
                                     
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12">
-                                        <input type="email" id="email" name="email" value="" placeholder="Email address " required>
+                                        <input type="email" id="email" name="volunteer_email" value="" placeholder="Email address " required>
                                     </div>
                                     
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12">
-                                        <input type="number" id="user" name="phone_number" value="" placeholder="Phone Number" required>
+                                        <input type="number" id="user" name="volunteer_phone" value="" placeholder="Phone Number" required>
                                     </div>    
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12">
-                                        <input type="text" id="education" name="education_level" value="" placeholder="Education Level" required>
-                                    </div>    
+                                        <input type="text" id="education" name="volunteer_level_of_education" value="" placeholder="Education Level" required>
+                                    </div>   
+
+                                     <div class="form-group col-lg-12">
+                                        <input type="text" id="education" name="volunteer_address" value="" placeholder="Address" required>
+                                    </div>   
+
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12">
-                                        <input type="date" id="Confirm" name="date_of_birth" value="date" placeholder="Date Of Birth" required>
+                                        <input type="date" id="Confirm" name="volunteer_dob" value="date" placeholder="Date Of Birth" required>
                                     </div>
 
                                     <!-- Form Group -->
                                     <div class="form-group col-lg-12">
                                         <h5>Upload Your Photo here</h5>
-                                        <input type="file" id="photo" name="photo" value="" placeholder="Volunteer Photo" required>
+                                        <input type="file" id="photo" name="volunteer_photo" value="" placeholder="Volunteer Photo" required>
                                     </div>
                                     <div class="form-group col-lg-12">
-                                        <textarea id="message" name="message" value="" placeholder="Leave Your message here" required></textarea>
+                                        <textarea id="message" name="volunteer_reason_to_join" value="" placeholder="Leave Your message here" required></textarea>
                                     </div>
-                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
+                                    {{-- <div class="form-group col-lg-12 col-md-12 col-sm-12">
                                         <div class="row clearfix">
                                             <!-- Column -->
                                             <div class="column col-lg-3 col-md-4 col-sm-12">
@@ -100,10 +112,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     
                                     <div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
-                                        <button type="submit" class="readon register-btn" style="background-color: blue;"><span class="txt">Send us your Message Today</span></button>
+                                        <button type="submit" class="readon register-btn" style="background-color: blue;"><span class="txt">SUBMIT YOUR DETAILS</span></button>
                                     </div>
                                     
                                     <!-- <div class="form-group col-lg-12 col-md-12 col-sm-12">

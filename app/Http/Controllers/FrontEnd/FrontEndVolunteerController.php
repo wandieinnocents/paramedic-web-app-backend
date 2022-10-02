@@ -32,9 +32,11 @@ class FrontEndVolunteerController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validatedData = $request->validate([
             'volunteer_photo' => 'required|mimes:doc,pdf,docx,zip,jpeg,jpg,csv,txt,xlx,xls,png',
         ]);
+
         $volunteer = new Volunteer();
         $volunteer->volunteer_name      = $request->volunteer_name;
         $volunteer->volunteer_dob       = $request->volunteer_dob;
@@ -55,8 +57,9 @@ class FrontEndVolunteerController extends Controller
     //    else{
     //     $volunteer->volunteer_photo  = '';
     // }
+    // dd("dd");
         $volunteer->save();
-        return redirect('/join_volunteers/create');
+        return redirect()->back()->with('message', 'Thank you for Submitting your Volunteer  Request! We shall contact you.');;
     }
     /**
      * Display the specified resource.
