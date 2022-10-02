@@ -74,7 +74,8 @@
                                     <p>Get in touch with us using out ohone numbers, email , P.O Box or google map</p>
                                 </div>
                                 <div id="form-messages"></div>
-                                <form id="contact-form" method="post" action="">
+                                <form  method="post" action="{{ route('contact.store') }}">
+                                @csrf
                                     <div class="row">
                                         <div class="col-lg-6 mb-35 col-md-12">
                                             <input class="from-control" type="text" id="name" name="name" placeholder="Name" required="">
@@ -90,7 +91,7 @@
                                         </div>
                                      
                                         <div class="col-lg-12 mb-50">
-                                            <textarea class="from-control" id="message" name="message" placeholder=" Message" required=""></textarea>
+                                            <textarea class="from-control" id="message" name="description" placeholder=" Message" required=""></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group mb-0">

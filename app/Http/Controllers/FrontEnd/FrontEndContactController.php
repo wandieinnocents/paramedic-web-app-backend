@@ -46,7 +46,7 @@ class FrontEndContactController extends Controller
 
         // send copy to email
        
-        \Mail::to('wandieinnocent2@gmail.com')->send(new \App\Mail\SupportMail($contact));
+        // \Mail::to('wandieinnocent2@gmail.com')->send(new \App\Mail\SupportMail($contact));
        
 
 
