@@ -175,7 +175,6 @@
                                         <a href="{!! asset($team->team_photo) !!}" target="_blank">
                                             <img 
                                                 
-                                                onerror="if (this.src != '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}') this.src = '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}';"
                                                 src="{{ asset($team->team_photo) }}" alt="preview"
                                                 style="height:350px !important; width:350px !important; margin-left:20px;">
                                         </a>
