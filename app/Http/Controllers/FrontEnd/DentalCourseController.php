@@ -15,7 +15,7 @@ class DentalCourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::all();
+        // $courses = Course::all();
         $dental_courses = Course::all()->where('course_school_category', '=', 'Dental');
         // dd($dental_courses);
         return view('frontend.pages_frontend.dental.index',compact('dental_courses'));

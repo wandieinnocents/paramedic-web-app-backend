@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class NursingCourseController extends Controller
 {
@@ -14,7 +15,10 @@ class NursingCourseController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages_frontend.nursing.index');
+        // $courses = Course::all();
+        $nursing_courses = Course::all()->where('course_school_category', '=', 'Nursing');
+        // dd($nursing_courses);
+        return view('frontend.pages_frontend.nursing.index',compact('nursing_courses'));
     }
 
     /**
