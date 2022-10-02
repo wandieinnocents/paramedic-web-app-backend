@@ -14,7 +14,7 @@
                     <h1 class="page-title">Blog</h1>
                     <ul>
                         <li>
-                            <a class="active" href="index-2.html">Home</a>
+                            <a class="active" href="/">Home</a>
                         </li>
                         <li>Blog</li>
                     </ul>
@@ -50,29 +50,33 @@
                         </div>
                         <div class="col-lg-8 pr-50">
                             <div class="row">
+                            {{-- start news --}}
+                            @foreach($posts as $post)
+                                
+                            
                                 <div class="col-lg-12 mb-70">
                                     <div class="blog-item">
                                         <div class="blog-img">
-                                            <a href="#"><img src="assets/frontend/images/blog/inner/1.jpg" alt=""></a>
+                                            <a href="#"><img src="{{ asset($post->post_photo) }}" alt=""></a>
                                         </div>
                                         <div class="blog-content">
-                                            <h3 class="blog-title"><a href="#">Practical Health care Training at IPI</a></h3>
+                                            <h3 class="blog-title"><a href="#">{{ $post->post_title }}</a></h3>
                                             <div class="blog-meta">
                                                 <ul class="btm-cate">
                                                     <li>
                                                         <div class="blog-date">
-                                                            <i class="fa fa-calendar-check-o"></i> September 14, 2020                                                        
+                                                            <i class="fa fa-calendar-check-o"></i> {{ $post->created_at }}                                                       
                                                         </div>
                                                     </li>
                                                     <li>
                                                         <div class="author">
-                                                            <i class="fa fa-user-o"></i> admin  
+                                                            <i class="fa fa-user-o"></i> {{ $post->post_created_by }}  
                                                         </div>
                                                     </li>   
                                                     <li>
                                                         <div class="tag-line">
                                                             <i class="fa fa-book"></i>
-                                                            <a href="#">University</a> 
+                                                            <a href="#">{{ $post->post_category_r->post_category_name }}</a> 
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -86,6 +90,8 @@
                                         </div>
                                     </div>
                                 </div>
+                            @endforeach
+                            {{-- end news --}}
                              
                              
                              
