@@ -50,12 +50,11 @@
                     {{-- start dental loop --}}
                     @foreach($nursing_courses as $nursing_course)
                         
-                    
                         <div class="col-lg-6 mb-40">
                             <div class="course-item">
                                 <div class="course-image">
                                   <a href="#">
-                                      <img src="assets/frontend/images/courses/home6/style1/1.png" alt="images">
+                                      <img src="{{ asset($nursing_course->course_photo) }}" alt="images">
                                   </a>
                                 </div>
                                 <div class="course-info">
