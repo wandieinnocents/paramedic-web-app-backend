@@ -50,7 +50,9 @@ class NursingCourseController extends Controller
      */
     public function show($id)
     {
-        //
+        $course = Course::find($id);
+        return view('frontend.pages_frontend.nursing.show',compact('course'));
+
     }
 
     /**

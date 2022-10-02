@@ -73,7 +73,7 @@
                                         </a>
                                     </h3>
                                     <div class="btn-part">
-                                            <a href="dental-details.html">View Details <i class="flaticon-right-arrow"></i></a>
+                                            <a href="{{ route('nursing.show',$nursing_course->id) }}">View Details <i class="flaticon-right-arrow"></i></a>
                                         </div>
                                     
                                   
