@@ -1,7 +1,7 @@
 @extends('frontend.layouts_frontend.master')
 
 @section('title')
-    Nursing
+    Course Details
 @endsection
 
 @section('content')
