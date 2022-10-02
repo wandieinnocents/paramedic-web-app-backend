@@ -50,7 +50,10 @@ class DentalCourseController extends Controller
      */
     public function show($id)
     {
-        //
+        $course = Course::find($id);
+        return view('frontend.pages_frontend.dental.show',compact('course'));
+
+
     }
 
     /**
