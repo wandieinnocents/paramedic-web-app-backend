@@ -14,7 +14,7 @@
                         <li>
                             <a class="active" href="index2.html">IPI</a>
                         </li>
-                        <li>Enjoy some our school activities</li>
+                        <li>Photo Gallery</li>
                     </ul>
                 </div>
             </div>
@@ -23,21 +23,18 @@
             <div class="rs-gallery pt-100 pb-100 md-pt-70 md-pb-70">
                 <div class="container">
                    <div class="row margin-0">
-                       <div class="col-lg-4 mb-0 padding-0 col-md-6">
+                    {{-- start photos --}}
+                    @foreach($photos as $photo)
+                        
+                    
+                       <div class="col-lg-4 mb-0 padding-0 col-md-6" style="margin-left:10px;margin-top:10px;">
                             <div class="gallery-img">
-                                <a class="image-popup" href="assets/frontend/images/gallery/1.jpg"><img src="assets/frontend/images/gallery/1.jpg" alt=""></a>
+                                <a class="image-popup" href="{{ asset($photo->gallery_photo) }}"><img src="{{ asset($photo->gallery_photo) }}" alt="" style="width:350px; height:300px;"></a>
                             </div>
                        </div>
-                       <div class="col-lg-4 mb-0 padding-0 col-md-6">
-                            <div class="gallery-img">
-                                <a class="image-popup" href="assets/frontend/images/gallery/2.jpg"><img src="assets/frontend/images/gallery/2.jpg" alt=""></a>
-                            </div>
-                       </div>
-                       <div class="col-lg-4 mb-0 padding-0 col-md-6">
-                            <div class="gallery-img">                                
-                                <a class="image-popup" href="assets/frontend/images/gallery/3.jpg"><img src="assets/frontend/images/gallery/3.jpg" alt=""></a>
-                            </div>
-                       </div>
+                       @endforeach
+                       {{-- end photos --}}
+                      
                    </div>
                    </div>
                 </div> 

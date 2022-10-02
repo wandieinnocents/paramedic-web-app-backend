@@ -16,6 +16,7 @@ class FrontEndVideoGalleryController extends Controller
     public function index()
     {
         $videos = VideoGallery::all();
+        
         // dd("Fetch Videos Here");
         return view('frontend.pages_frontend.videos.index',compact('videos')); 
     }
