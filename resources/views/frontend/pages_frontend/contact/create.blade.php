@@ -74,6 +74,12 @@
                                     <p>Get in touch with us using out ohone numbers, email , P.O Box or google map</p>
                                 </div>
                                 <div id="form-messages"></div>
+                                {{-- success message --}}
+                                 @if(session()->has('message'))
+                                    <div class="alert alert-info">
+                                        {{ session('message') }}
+                                    </div>
+                                @endif
                                 <form  method="post" action="{{ route('contact.store') }}">
                                 @csrf
                                     <div class="row">
