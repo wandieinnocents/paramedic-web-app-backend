@@ -163,51 +163,42 @@
                         <h2 class="title mb-0">Meet our Team of Expert Teachers</h2>
                 </div>
                     <div class="row">
+					{{-- start team loop --}}
+					@foreach($teams as $team)
+						
+					
                         <div class="col-lg-4 col-sm-6 mb-30">
+
                             <div class="team-item">
-                                <img src="assets/frontend/images/team/1.jpg" alt="">
+                                {{-- <img src="assets/frontend/images/team/1.jpg" alt=""> --}}
+								@if ($team->team_photo)
+                                        <a href="{!! asset($team->team_photo) !!}" target="_blank">
+                                            <img 
+                                                
+                                                onerror="if (this.src != '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}') this.src = '{{ asset('assets/backend_assets/assets/images/users/avatar-2.jpg') }}';"
+                                                src="{{ asset($team->team_photo) }}" alt="preview"
+                                                style="height:350px !important; width:350px !important; margin-left:20px;">
+                                        </a>
+                                    @else
+                                        <p class="text-danger">No Photo</p>
+                                    @endif
+								
                                 <div class="content-part">
-                                    <h4 class="name"><a href="team-single.html">Dr. Steven S Sseruyange</a></h4>
-								    <span class="designation">President</span>
-                                    <ul class="social-links">
+                                    <h4 class="name"><a href="javascript::void(0)">{{ $team->team_name }}</a></h4>
+								    <span class="designation">{{ $team->team_role }}</span>
+                                    {{-- <ul class="social-links">
                                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 mb-30">
-                            <div class="team-item">
-                                <img src="assets/frontend/images/team/2.jpg" alt="">
-                                <div class="content-part">
-                                    <h4 class="name"><a href="team-single.html">Mr. Mutumba Abraham</a></h4>
-								     <span class="designation">Academic Registrar</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 mb-30">
-                            <div class="team-item">
-                                <img src="assets/frontend/images/team/3.jpg" alt="">
-                                <div class="content-part">
-                                    <h4 class="name"><a href="team-single.html">Nakalema Zakia</a></h4>
-								   <span class="designation">Head of Administration & Finance</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+
+					@endforeach
+					{{-- end team loop --}}
+                       
                        
                        
 					
