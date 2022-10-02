@@ -42,8 +42,8 @@
                                             <label class="form-label" for="validationCustom01">School Category</label>
                                             <select name="course_school_category" class="form-select">
                                                 <option value="">Select </option>
-                                                <option value="dental">Dental School</option>
-                                                <option value="nursing">Nursing School</option>
+                                                <option value="Dental">Dental School</option>
+                                                <option value="Nursing">Nursing School</option>
                                             </select>
                                         </div>
                                     </div>

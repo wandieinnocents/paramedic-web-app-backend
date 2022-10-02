@@ -50,6 +50,10 @@
             <div class="rs-latest-couses orange-color pt-100 pb-100 md-pt-70 md-pb-70">
                 <div class="container">
                     <div class="row">
+                    {{-- start dental loop --}}
+                    @foreach($dental_courses as $dental_course)
+                        
+                    
                         <div class="col-lg-6 mb-40">
                             <div class="course-item">
                                 <div class="course-image">
@@ -58,198 +62,32 @@
                                   </a>
                                 </div>
                                 <div class="course-info">
+                                 
                                  <ul class="meta-part">
-                                     <li><span class="price">1,500,000 UGX</span></li>
-                                     <!-- <li class="user"><i class="fa fa-user"></i> 245</li> -->
+                                     <li><span class="price">Level: {{ $dental_course->course_level }} </span></li>
+                                 </ul>
+                                 {{-- level --}}
+                                
+                                 <ul class="meta-part">
+                                     <li><span class="price">Fees : {{ $dental_course->course_price_range }} UGX</span></li>
                                  </ul>
                                     <h3 class="course-title">
                                         <a href="course-single.html">
-                                            Well Trained Students competent for the Market
+                                            {{ $dental_course->course_name }}
                                         </a>
                                     </h3>
-                                    <div class="bottom-part">
-                                        <!-- <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div> -->
-                                        <div class="btn-part">
-                                            <a href="dental-details.html">View Details<i class="flaticon-right-arrow"></i></a>
+                                    <div class="btn-part">
+                                            <a href="dental-details.html">View Details <i class="flaticon-right-arrow"></i></a>
                                         </div>
-                                    </div>
+                                    
+                                  
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-40">
-                            <div class="course-item">
-                                <div class="course-image">
-                                  <a href="course-single.html">
-                                      <img src="assets/frontend/images/courses/home6/style1/2.png" alt="images">
-                                  </a>
-                                </div>
-                                <div class="course-info">
-                                 <ul class="meta-part">
-                                     <li><span class="price">1,500,000 UGX</span></li>
-                                     <!-- <li class="user"><i class="fa fa-user"></i> 245</li> -->
-                                 </ul>
-                                    <h3 class="course-title">
-                                        <a href="course-single.html">Fully furnished training facilities for our students</a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <!-- <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div> -->
-                                        <div class="btn-part">
-                                            <a href="dental-details.html">View Details<i class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="col-lg-6 mb-40">
-                            <div class="course-item">
-                                <div class="course-image">
-                                  <a href="#">
-                                      <img src="assets/images/courses/home6/style1/3.png" alt="images">
-                                  </a>
-                                </div>
-                                <div class="course-info">
-                                 <ul class="meta-part">
-                                     <li><span class="price">$55.00</span></li>
-                                     <li class="user"><i class="fa fa-user"></i> 245</li>
-                                 </ul>
-                                    <h3 class="course-title">
-                                        <a href="course-single.html">Learning jQuery Mobile for Beginners</a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="#">Apply Now<i class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-40">
-                            <div class="course-item">
-                                <div class="course-image">
-                                  <a href="#">
-                                      <img src="assets/images/courses/home6/style1/4.png" alt="images">
-                                  </a>
-                                </div>
-                                <div class="course-info">
-                                 <ul class="meta-part">
-                                     <li><span class="price">$55.00</span></li>
-                                     <li class="user"><i class="fa fa-user"></i> 245</li>
-                                 </ul>
-                                    <h3 class="course-title">
-                                        <a href="course-single.html">Become a PHP Master and Make Money</a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="#">Apply Now<i class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 md-mb-40">
-                            <div class="course-item">
-                                <div class="course-image">
-                                  <a href="#">
-                                      <img src="assets/images/courses/home6/style1/5.png" alt="images">
-                                  </a>
-                                </div>
-                                <div class="course-info">
-                                 <ul class="meta-part">
-                                     <li><span class="price">$55.00</span></li>
-                                     <li class="user"><i class="fa fa-user"></i> 245</li>
-                                 </ul>
-                                    <h3 class="course-title">
-                                        <a href="course-single.html">The Art of Black and White Photography</a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="#">Apply Now<i class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="course-item">
-                                <div class="course-image">
-                                  <a href="#">
-                                      <img src="assets/images/courses/home6/style1/6.png" alt="images">
-                                  </a>
-                                </div>
-                                <div class="course-info">
-                                 <ul class="meta-part">
-                                     <li><span class="price">$55.00</span></li>
-                                     <li class="user"><i class="fa fa-user"></i> 245</li>
-                                 </ul>
-                                    <h3 class="course-title">
-                                        <a href="course-single.html">Introduction to Javascript for Beginners</a>
-                                    </h3>
-                                    <div class="bottom-part">
-                                        <div class="info-meta">
-                                            <ul>                                                
-                                                <li class="ratings">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    (05)
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn-part">
-                                            <a href="#">Apply Now<i class="flaticon-right-arrow"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        @endforeach
+                        {{-- end dental course loop --}}
+                     
+                        
                     </div>
                 </div>
             </div>

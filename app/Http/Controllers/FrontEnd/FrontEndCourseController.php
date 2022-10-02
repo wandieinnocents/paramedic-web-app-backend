@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Course;
 
 class FrontEndCourseController extends Controller
 {
@@ -14,7 +15,7 @@ class FrontEndCourseController extends Controller
      */
     public function index()
     {
-        //
+        
     }
 
     /**

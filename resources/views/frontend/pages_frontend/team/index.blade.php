@@ -159,8 +159,8 @@
             <div id="rs-team" class="rs-team style1 orange-color pt-94 pb-100 md-pt-64 md-pb-70 white-bg">
                 <div class="container">
                     <div class="sec-title mb-50 md-mb-30">
-                        <div class="sub-title blue">Instructor</div>
-                        <h2 class="title mb-0">Meet our Team of Expert Teachers</h2>
+                        <div class="sub-title blue">Staff</div>
+                        <h2 class="title mb-0">Meet our Team of Expert Staff</h2>
                 </div>
                     <div class="row">
 					{{-- start team loop --}}
