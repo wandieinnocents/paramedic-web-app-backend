@@ -45,7 +45,6 @@
                                 <span data-key="t-calendar">Add Category</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/resource_categories">
                                 <span data-key="t-calendar"
@@ -53,13 +52,11 @@
                                 >
                             </a>
                         </li>
-
                         <li>
                             <a href="/resources/create">
                                 <span data-key="t-chat">Add Resource</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/resources">
                                 <span data-key="t-chat">View Resources</span>
@@ -71,7 +68,6 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
                         <i class="fas fa-photo-video"></i>
-
                         <span data-key="t-apps">Photos</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
@@ -90,17 +86,14 @@
                                 <span data-key="t-chat">Add Photo</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/galleries">
                                 <span data-key="t-chat">View Photos</span>
                             </a>
                         </li>
                         {{-- video  --}}
-                      
                     </ul>
                 </li>
-
                 {{-- Video gallery --}}
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -120,7 +113,6 @@
                         </li>
                     </ul>
                 </li>
-
                 <!-- Services -->
                 {{-- <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -133,19 +125,16 @@
                                 <span data-key="t-calendar">Add Category</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/service_categories">
                                 <span data-key="t-calendar">View Categories</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/services/create">
                                 <span data-key="t-chat">Add Service</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/services">
                                 <span data-key="t-chat">View Services</span>
@@ -153,7 +142,6 @@
                         </li>
                     </ul>
                 </li> --}}
-
                 <!-- Projects -->
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -166,19 +154,16 @@
                                 <span data-key="t-calendar">Add Category</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/project_categories">
                                 <span data-key="t-calendar">View Categories</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/projects/create">
                                 <span data-key="t-chat">Add Project</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/projects">
                                 <span data-key="t-chat">View Projects</span>
@@ -186,7 +171,6 @@
                         </li>
                     </ul>
                 </li>
-
                 {{-- courses --}}
                  <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -194,13 +178,11 @@
                         <span data-key="t-apps">Courses</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                       
                         <li>
                             <a href="/courses/create">
                                 <span data-key="t-chat">Add Course</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/courses">
                                 <span data-key="t-chat">View Course</span>
@@ -208,7 +190,6 @@
                         </li>
                     </ul>
                 </li>
-
                 {{-- events --}}
                  <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -216,22 +197,18 @@
                         <span data-key="t-apps">Events</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        
-
                         <li>
-                            <a href="/projects/create">
+                            <a href="/events/create">
                                 <span data-key="t-chat">Add Event</span>
                             </a>
                         </li>
-
                         <li>
-                            <a href="/projects">
+                            <a href="/events">
                                 <span data-key="t-chat">View Events</span>
                             </a>
                         </li>
                     </ul>
                 </li>
-
                 {{-- Posts --}}
                 <!-- Posts -->
                 <li>
@@ -241,25 +218,18 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <!-- Post categories create -->
-                       
                             <li>
                                 <a href="/post_categories/create">
                                     <span data-key="t-calendar">Add Category</span>
                                 </a>
                             </li>
-                       
-
                         <!-- Post categories list -->
-                       
                             <li>
                                 <a href="/post_categories">
                                     <span data-key="t-calendar">View Categories</span>
                                 </a>
                             </li>
-                       
-
                         <!-- Create post -->
-
                         <li>
                             <a href="{{ route('posts.create') }}">
                                 <span data-key="t-chat">Add Post</span>
@@ -271,11 +241,8 @@
                                 <span data-key="t-chat">View Posts</span>
                             </a>
                         </li>
-
-
                     </ul>
                 </li>
-
                 {{-- Team --}}
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -283,14 +250,11 @@
                         <span data-key="t-apps">Staff</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                       
-
                         <li>
                             <a href="/teams/create">
                                 <span data-key="t-chat">Add Staff</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="/teams">
                                 <span data-key="t-chat">View Staffs</span>
@@ -315,15 +279,10 @@
                                 <span data-key="t-calendar">View Faq's</span>
                             </a>
                         </li>
-
                     </ul>
                 </li>
-
-
                 <hr>
-
                 @guest
-
                     <!-- Login -->
                     @if (Route::has('login'))
                         <li>
@@ -331,10 +290,8 @@
                                 <i class="fas fa-user-check"></i>
                                 <span data-key="t-apps">Login</span>
                             </a>
-
                         </li>
                     @endif
-
                     <!-- Register -->
                     @if (Route::has('register'))
                         <li>
@@ -342,10 +299,8 @@
                                 <i class="fas fa-user-check"></i>
                                 <span data-key="t-apps">Register</span>
                             </a>
-
                         </li>
                     @endif
-
                     <!-- else -->
                 @else
                     <!-- Users -->
@@ -356,16 +311,11 @@
                                 <span data-key="t-apps">Users</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-
-
-
-
                                 <li>
                                     <a href="{{ route('users.create') }}">
                                         <span data-key="t-chat">Add User</span>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="{{ route('users.index') }}">
                                         <span data-key="t-chat">View Users</span>
@@ -374,7 +324,6 @@
                             </ul>
                         </li>
                     @endcan
-
                     <!-- Roles -->
                     @can('role-list')
                         <li>
@@ -388,20 +337,14 @@
                                         <span data-key="t-calendar">Add Roles</span>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="{{ route('roles.index') }}">
                                         <span data-key="t-calendar">View Roles</span>
                                     </a>
                                 </li>
-
-
-
                             </ul>
                         </li>
                     @endcan
-
-
                     <!-- Permissions -->
                     @can('permission-list')
                         <li>
@@ -415,63 +358,22 @@
                                         <span data-key="t-calendar">Add Permissions</span>
                                     </a>
                                 </li>
-
                                 <li>
                                     <a href="{{ route('permissions.index') }}">
                                         <span data-key="t-calendar">View Permissions</span>
                                     </a>
                                 </li>
-
-
-
                             </ul>
                         </li>
                     @endcan
-
-
-
-
-
-
-
-
                     <li>
                         <a href="{{ route('logout') }}">
                             <i class="fas fa-power-off"></i>
                             <span data-key="t-apps">Logout</span>
                         </a>
-
                     </li>
-
-
                 @endguest
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </ul>
-
             <div class="card sidebar-alert border-5 text-center mx-4 mb-0 mt-5"
                 style="border-radius: 100px 100px 0px 0px">
                 <div class="card-body">

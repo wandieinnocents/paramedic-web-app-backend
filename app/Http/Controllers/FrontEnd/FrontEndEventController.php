@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontEnd;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Event;
 
 class FrontEndEventController extends Controller
 {
@@ -14,7 +15,8 @@ class FrontEndEventController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages_frontend.events.index');
+        $events = Event::all();
+        return view('frontend.pages_frontend.events.index',compact('events'));
     }
 
     /**
@@ -46,7 +48,9 @@ class FrontEndEventController extends Controller
      */
     public function show($id)
     {
-        //
+        $event = Event::find($id);
+        return view('frontend.pages_frontend.events.show',compact('event'));
+
     }
 
     /**
