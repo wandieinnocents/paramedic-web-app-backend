@@ -97,7 +97,7 @@
                                                  <ul class="sub-menu">
                                                     <li><a href="/about">About</a> </li>
                                                      <li><a href="/our_team">Staff</a> </li>
-                                                     <li><a href="/our_faqs">FAQ</a> </li>
+                                                     {{-- <li><a href="/our_faqs">FAQ</a> </li> --}}
                                                      <li><a href="/join_volunteers/create">Volunteer</a> </li>
                                                  </ul>
                                              </li>
