@@ -28,20 +28,44 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-12 order-last">
                             <div class="widget-area">
-                                <div class="search-widget mb-50">
+                                {{-- <div class="   search-widget mb-50">
                                     <div class="search-wrap">
                                         <input type="search" placeholder="Searching..." name="s" class="search-input" value="">
                                         <button type="submit" value="Search"><i class=" flaticon-search"></i></button>
                                     </div>
-                                </div>
+                                </div> --}}
+                                {{-- RESCENT CATEGORIES --}}
+                                
+
+
                                 <div class="recent-posts mb-50">
                                     <h3 class="widget-title">Recent Posts</h3>
                                     <ul>
-                                        <li><a href="#">Covid Reponse</a></li>
-                                        <li><a href="#">NCD's in the Village</a></li>
-                                        <li><a href="#">World Cancer Day</a></li>
-                                        <li><a href="#">Community Outreach</a></li>
-                                        <li><a href="#"></a></li>
+                                    @foreach($post_categories_fetch as $post_category)
+                                        <li>
+                                        
+                                        <a class="clearfix" href="javascript::void()">
+                                        {{ $post_category->post_category_name }} 
+                                        
+                                        </li>
+                                         @endforeach
+                                        
+                                    </ul>
+                                </div>
+
+                                {{-- rescent posts --}}
+                                <div class="recent-posts mb-50">
+                                    <h3 class="widget-title">Recent Categories</h3>
+                                    <ul>
+                                    @foreach($posts as $rescent_post)
+                                        <li>
+                                        
+                                        <a class="clearfix" href="{{ route('articles.show',$post_category->id) }}">
+                                        {{ $rescent_post->post_title }} 
+                                        
+                                        </li>
+                                         @endforeach
+                                        
                                     </ul>
                                 </div>
                                  

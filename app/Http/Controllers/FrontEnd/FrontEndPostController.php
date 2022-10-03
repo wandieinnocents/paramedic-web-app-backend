@@ -17,8 +17,9 @@ class FrontEndPostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        // dd($posts);
-        return view('frontend.pages_frontend.articles.index',compact('posts'));     
+        $post_categories_fetch = PostCategory::all();
+        // dd($post_categories_fetch->post_category_name   );
+        return view('frontend.pages_frontend.articles.index',compact('posts','post_categories_fetch'));     
 
     }
 
@@ -53,7 +54,7 @@ class FrontEndPostController extends Controller
     {
         $post = Post::find($id);
         $post_categories_fetch = PostCategory::all();
-        // dd($post);
+        // dd($post_categories_fetch);
         return view('frontend.pages_frontend.articles.show',compact('post','post_categories_fetch'));
     }
 

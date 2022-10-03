@@ -55,39 +55,7 @@
                        </div>
                    </div>
                    
-                   {{-- <div class="comment-area">
-                      <div class="comment-full">
-                          <h3 class="reply-title">Leave a Reply</h3>
-                            <p>
-                              <span>Your email address will not be published. Required fields are marked </span>
-                            </p>
-                            <form id="contact-form" method="post" action="https://keenitsolutions.com/products/html/educavo/mailer.php">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group">
-                                            <label>Name*</label>
-                                            <input type="text" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <div class="form-group">
-                                            <label>Email*</label>
-                                            <input type="email" class="form-control" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-sm-12 mb-35">
-                                        <div class="form-group">
-                                            <label>Your comment here...</label>
-                                            <textarea cols="40" rows="10" class="textarea form-control" required=""></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                            <div class="submit-btn">
-                                <input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
-                            </div>
-                      </div>
-                   </div> --}}
+                 
                 </div>
             </div>
             <!-- Blog Section End -->  

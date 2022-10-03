@@ -27,7 +27,7 @@
                     @foreach($photos as $photo)
                         
                     
-                       <div class="col-lg-4 mb-0 padding-0 col-md-6" style="margin-left:10px;margin-top:10px;">
+                       <div class="col-lg-4 mb-0 padding-0 col-md-6" >
                             <div class="gallery-img">
                                 <a class="image-popup" href="{{ asset($photo->gallery_photo) }}"><img src="{{ asset($photo->gallery_photo) }}" alt="" style="width:350px; height:300px;"></a>
                             </div>
