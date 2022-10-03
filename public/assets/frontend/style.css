@@ -4184,9 +4184,10 @@ body .modal-backdrop {
   right: 15px;
 }
 .rs-banner.style7 {
-  background: url(assets/frontend/images/banner/home7/banner-bg.jpg);
+  background: url('/assets/frontend/images/banner/home7/banner-bg.jpg');
   background-size: cover;
   background-position: center;
+  /* background-color:black; */
   position: relative;
   min-height: 870px;
 }
