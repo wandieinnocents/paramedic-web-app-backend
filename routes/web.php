@@ -23,9 +23,10 @@ Route::get('/', function (Request $request) {
 
     $posts = Post::all();
     $dental_courses = Course::all()->where('course_school_category', '=', 'Dental');
+    $nursing_courses = Course::all()->where('course_school_category', '=', 'Nursing');
    
 
-    return view('welcome',compact('posts','dental_courses'));
+    return view('welcome',compact('posts','dental_courses','nursing_courses'));
 });
 
 

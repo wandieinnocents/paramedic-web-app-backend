@@ -551,7 +551,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="btn-part text-right sm-text-left">
-                            <a href="#" class="readon">View All Courses</a>
+                            <a href="/dental" class="readon">View All Courses</a>
                         </div>
                     </div>
                 </div>
@@ -574,12 +574,8 @@
                                 </ul>
                                 
                                 <h3 class="title"><a href="#">{{ $dental_course->course_name }}</a></h3>
-                                <div class="bottom-part">
-                                    
-                                    <div class="btn-part">
-                                        <a href="dental-details.html"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
+                                <a href="{{ route('dental.show',$dental_course->id) }}"> View Details <i class="flaticon-right-arrow"></i></a>
+                                
                             </div>
                         </div>
                     </center>
@@ -602,114 +598,55 @@
           <div id="rs-popular-courses" class="rs-popular-courses bg6 style1 ">
             <div class="container">
                 <div class="row y-middle mb-50 md-mb-30">
+
+
                     <div class="col-md-6 sm-mb-30">
                         <div class="sec-title">
                             <div class="sub-title primary">IPI Courses</div>
-                            <h2 class="title mb-0">Courses offered at IPI</h2>
+                            <h2 class="title mb-0">Dental Courses offered at IPI</h2>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="btn-part text-right sm-text-left">
-                            <a href="#" class="readon">View All Courses</a>
+                            <a href="/dental" class="readon">View All Courses</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
+
+                    {{-- start dental course --}}
+                    @foreach($nursing_courses as $nurse_course)
                     <div class="col-lg-4 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms">
+                    <center>
                         <div class="courses-item">
                             <div class="img-part">
-                                <img src="{{ asset('assets/frontend/images/courses/1.png') }}" alt="">
+                                <img src="{{ asset($nurse_course->course_photo) }}" alt="">
                             </div>
                             <div class="content-part">
+                                   
                                 <ul class="meta-part">
-                                    <li><span class="price">UGX. 1,500,000</span></li>
-                                    <li><a class="categorie" href="dental.html">Dentistry</a></li>
+                                   <li> <p style="margin-bottom:-1px;">{{ $nurse_course->course_level }}</p></li>
+                                    <li><span class="price">UGX. {{ $nurse_course->course_price_range }} </span></li>
                                 </ul>
-                                <h3 class="title"><a href="#">Diploma in Public Health Dentistry(3 years)</a></h3>
-                                <div class="bottom-part">
-                                    <!-- <div class="info-meta">
-                                                <ul>
-                                                    <li class="user"><i class="fa fa-user"></i> 245</li>
-                                                    <li class="ratings">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        (05)
-                                                    </li>
-                                                </ul>
-                                            </div> -->
-                                    <div class="btn-part">
-                                        <a href="dental-details.html"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
+                                
+                                <h3 class="title"><a href="#">{{ $nurse_course->course_name }}</a></h3>
+                                <a href="{{ route('nursing.show',$nurse_course->id) }}"> View Details <i class="flaticon-right-arrow"></i></a>
+                                
                             </div>
                         </div>
+                    </center>
                     </div>
-                    <div class="col-lg-4 col-md-6  mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms">
-                        <div class="courses-item">
-                            <div class="img-part">
-                                <img src="{{ asset('assets/frontend/images/courses/2.png') }}" alt="">
-                            </div>
-                            <div class="content-part">
-                                <ul class="meta-part">
-                                    <li><span class="price">UGX. 1,500,000</span></li>
-                                    <li><a class="categorie" href="#">Clinical Medicine</a></li>
-                                </ul>
-                                <h3 class="title"><a href="#">Diploma in Clinical Medicine(3 years)</a></h3>
-                                <div class="bottom-part">
-                                    <!-- <div class="info-meta">
-                                                <ul>
-                                                    <li class="user"><i class="fa fa-user"></i> 245</li>
-                                                    <li class="ratings">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        (05)
-                                                    </li>
-                                                </ul>
-                                            </div> -->
-                                    <div class="btn-part">
-                                        <a href="#"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6  mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms">
-                        <div class="courses-item">
-                            <div class="img-part">
-                                <img src="{{ asset('assets/frontend/images/courses/3.png') }}" alt="">
-                            </div>
-                            <div class="content-part">
-                                <ul class="meta-part">
-                                    <li><span class="price">UGX. 1,500,000</span></li>
-                                    <li><a class="categorie" href="#">Medical Laboratory</a></li>
-                                </ul>
-                                <h3 class="title"><a href="#">Diploma in Medical Laboratory(3 years)</a></h3>
-                                <div class="bottom-part">
-                                    <!-- <div class="info-meta">
-                                                <ul>
-                                                    <li class="user"><i class="fa fa-user"></i> 245</li>
-                                                    <li class="ratings">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        (05)
-                                                    </li>
-                                                </ul>
-                                            </div> -->
-                                    <div class="btn-part">
-                                        <a href="#"><i class="flaticon-right-arrow"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
+                    {{--  end of dental course --}}
+
+
+                 
 
                 </div>
             </div>
         </div>
-
         {{-- End nursing courses --}}
 
         <div class="row section-wrap"></div>
