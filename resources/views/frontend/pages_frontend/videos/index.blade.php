@@ -6,15 +6,15 @@
     <!-- Breadcrumbs Start -->
     <div class="rs-breadcrumbs breadcrumbs-overlay">
         <div class="breadcrumbs-img">
-            <img src="assets/frontend/images/breadcrumbs/4.jpg" alt="Breadcrumbs Image">
+            <img src="assets/frontend/images/breadcrumbs/9.png" alt="Breadcrumbs Image">
         </div>
         <div class="breadcrumbs-text white-color">
-            <h1 class="page-title">IPI Photo Gallery</h1>
-            <ul>
+            <h1 class="page-title">IPI Video Gallery</h1>
+        <ul>
                 <li>
                     <a class="active" href="index2.html">IPI</a>
                 </li>
-                <li>Photo Gallery</li>
+                <li>Video Gallery</li>
             </ul>
         </div>
     </div>

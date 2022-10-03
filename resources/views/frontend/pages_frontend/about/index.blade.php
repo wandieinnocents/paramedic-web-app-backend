@@ -54,12 +54,7 @@
 					<div class="container">
 						<div class="row y-bottom">
 							<div class="col-lg-6 pb-50 md-pt-70 md-pb-70">
-								<div class="video-wrap">
-									<a class="popup-videos" href="https://www.youtube.com/watch?v=atMUy_bPoQI">
-											<i class="fa fa-play"></i>
-											<h4 class="title mb-0">Take a Video  Tour at Educavo</h4>
-										</a>
-								</div>
+								
 							</div>
 							<div class="col-lg-6 pl-62 pt-134 pb-150 md-pt-50 md-pb-50 md-pl-15">
 								<div class="sec-title mb-40 md-mb-20">
