@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
 use App\Models\Post;
+use App\Models\Course;
 
 
 
@@ -21,9 +22,10 @@ use App\Models\Post;
 Route::get('/', function (Request $request) {
 
     $posts = Post::all();
+    $dental_courses = Course::all()->where('course_school_category', '=', 'Dental');
    
 
-    return view('welcome',compact('posts'));
+    return view('welcome',compact('posts','dental_courses'));
 });
 
 
