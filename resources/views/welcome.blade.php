@@ -1092,28 +1092,6 @@ The International Paramedical Institute Maya
                 </div> -->
                 <!-- Blog Section End -->
 
-                <!-- Newsletter section start -->
-                <div class="rs-newsletter style1 mb--124 sm-mb-0 sm-pb-70">
-                    <div class="container">
-                        <div class="newsletter-wrap">
-                            <div class="row y-middle">
-                                <div class="col-md-6 sm-mb-30">
-                                    <div class="sec-title">
-                                        <div class="sub-title white-color">Newsletter</div>
-                                        <h2 class="title mb-0 white-color">Want to be part   <br> of our institute today ?</h2>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <form class="newsletter-form">
-                                        <input type="email" name="email" placeholder="Enter Your Email" required="">
-                                        <button type="submit">Contact Us</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Newsletter section end -->
             </div>
             <!-- Section bg Wrap 2 End -->
 

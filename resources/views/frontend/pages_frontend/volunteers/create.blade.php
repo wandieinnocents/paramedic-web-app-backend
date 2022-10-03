@@ -12,12 +12,12 @@
                     <img src="{{ asset('assets/frontend/images/breadcrumbs/2.jpg') }}" alt="Breadcrumbs Image">
                 </div>
                 <div class="breadcrumbs-text white-color">
-                    <h1 class="page-title">Faq</h1>
+                    <h1 class="page-title">Volunteer</h1>
                     <ul>
                         <li>
                             <a class="active" href="index-2.html">Home</a>
                         </li>
-                        <li>Faq Us</li>
+                        <li>Volunteer</li>
                     </ul>
                 </div>
             </div>
