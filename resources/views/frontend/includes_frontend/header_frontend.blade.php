@@ -38,9 +38,10 @@
                             <div class="col-lg-2">
                               <div class="logo-cat-wrap">
                                   <div class="logo-part">
-                                      <a href="index2.html">
+                                      <a href="/">
                                           <!-- <img src="assets/frontend/images/logo-dark.png" alt=""> -->
                                           <img src="{{ asset('assets/frontend/images/pre-logo.png') }}" alt="">
+                                          {{-- <h2>IPI</h2> --}}
                         
                                       </a>
                                   </div>
@@ -190,7 +191,7 @@
                         </div>
                     </div>
                     <div class="canvas-logo">
-                        <a href="index-2.html"><img src="{{ asset('assets/frontend/images/logo-dark.png') }}" alt="logo"></a>
+                        <a href="/"><img src="{{ asset('assets/frontend/images/logo-dark.png') }}" alt="logo"></a>
                     </div>
                     <div class="offcanvas-text">
                         <p>We denounce with righteous indige nationality and dislike men who are so beguiled and demo  by the charms of pleasure of the moment data com so blinded by desire.</p>
