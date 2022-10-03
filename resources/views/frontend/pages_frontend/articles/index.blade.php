@@ -57,10 +57,10 @@
                                 <div class="col-lg-12 mb-70">
                                     <div class="blog-item">
                                         <div class="blog-img">
-                                            <a href="#"><img src="{{ asset($post->post_photo) }}" alt=""></a>
+                                            <a href="{{ route('articles.show',$post->id) }}"><img src="{{ asset($post->post_photo) }}" alt=""></a>
                                         </div>
                                         <div class="blog-content">
-                                            <h3 class="blog-title"><a href="#">{{ $post->post_title }}</a></h3>
+                                            <h3 class="blog-title"><a href="{{ route('articles.show',$post->id) }}">{{ $post->post_title }}</a></h3>
                                             <div class="blog-meta">
                                                 <ul class="btm-cate">
                                                     <li>
@@ -85,7 +85,7 @@
                                                 Being a medical training institution we train offer an all round practical feel to our students making them ...                                     
                                             </div>
                                             <div class="blog-button">
-                                                <a class="blog-btn" href="#">Continue Reading</a>
+                                                <a class="blog-btn" href="{{ route('articles.show',$post->id) }}">Continue Reading</a>
                                             </div>
                                         </div>
                                     </div>
