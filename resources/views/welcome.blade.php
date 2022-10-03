@@ -508,7 +508,7 @@
                                 <span class="icon-part"><i class="flaticon-document"></i></span>
                                 <h4 class="title"><a href="#">Paramedical School</a></h4>
                                 <p class="desc">Clinical, Public Health, Pharmacy e.t.c</p>
-                                <a class="service-btn" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                                <a class="service-btn" href="/about">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -518,7 +518,7 @@
                                 <span class="icon-part"><i class="flaticon-document"></i></span>
                                 <h4 class="title"><a href="#">Dental School</a></h4>
                                 <p class="desc">Get Training in Dentisty</p>
-                                <a class="service-btn" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                                <a class="service-btn" href="/dental">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -528,7 +528,7 @@
                                 <span class="icon-part"><i class="flaticon-bag"></i></span>
                                 <h4 class="title"><a href="#">Nursing School</a></h4>
                                 <p class="desc">Get Trained in Nursing and Midwifery</p>
-                                <a class="service-btn" href="#">Read More <i class="fa fa-arrow-right"></i></a>
+                                <a class="service-btn" href="/nursing">Read More <i class="fa fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -603,12 +603,12 @@
                     <div class="col-md-6 sm-mb-30">
                         <div class="sec-title">
                             <div class="sub-title primary">IPI Courses</div>
-                            <h2 class="title mb-0">Dental Courses offered at IPI</h2>
+                            <h2 class="title mb-0">Nursing Courses offered at IPI</h2>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="btn-part text-right sm-text-left">
-                            <a href="/dental" class="readon">View All Courses</a>
+                            <a href="/nursing" class="readon">View All Courses</a>
                         </div>
                     </div>
                 </div>
