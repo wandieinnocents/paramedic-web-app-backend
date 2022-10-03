@@ -35,9 +35,9 @@
                      <div class="offset-lg-6"></div>
                  </div>
             </div>
-            <div class="img-part">
+            {{-- <div class="img-part">
                 <img src="assets/frontend/images/banner/home7/nursing.png" style=" box-shadow: 0 0 100px 100px green inset;" alt="Images">
-            </div>
+            </div> --}}
         </div>
          <!-- Banner Section End -->
 

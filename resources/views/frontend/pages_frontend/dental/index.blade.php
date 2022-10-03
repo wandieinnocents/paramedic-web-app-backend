@@ -36,13 +36,13 @@
                      <div class="offset-lg-6"></div>
                  </div>
             </div>
-            <div class="img-part">
+            {{-- <div class="img-part">
                 <img src="assets/frontend/images/banner/home7/dental.jpg" style="  -webkit-filter: blur(10px);
                 -moz-filter: blur(20px);
                 -o-filter: blur(20px);
                 -ms-filter: blur(20px);
                 filter: blur(1px);" alt="Images">
-            </div>
+            </div> --}}
         </div>
          <!-- Banner Section End -->
 

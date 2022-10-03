@@ -4189,7 +4189,7 @@ body .modal-backdrop {
   background-position: center;
   /* background-color:black; */
   position: relative;
-  min-height: 870px;
+  min-height: 300px;
 }
 .rs-banner.style7 .banner-content {
   position: relative;
@@ -4225,7 +4225,7 @@ body .modal-backdrop {
   bottom: 88px;
 }
 .rs-banner.style8 {
-  background: url(assets/frontend/images/banner/home9.jpg);
+  background: url('/assets/frontend/images/banner/home9.jpg');
   background-size: cover;
   background-position: center;
   display: grid;
@@ -4649,44 +4649,44 @@ body .modal-backdrop {
   margin-left: -5px;
 }
 .rs-slider.style1 .slider-content.slide1 {
-  background: url(assets/frontend/images/slider/main-home/1.jpg);
+  background: url('/assets/frontend/images/slider/main-home/1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide2 {
-  background: url(assets/frontend/images/slider/main-home/2.jpg);
+  background: url('/assets/frontend/images/slider/main-home/2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide3 {
-  background: url(assets/frontend/images/slider/main-home/3.jpg);
+  background: url('/assets/frontend/images/slider/main-home/3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide4 {
-  background: url(assets/frontend/images/slider/main-home/4.jpg);
+  background: url('/assets/frontend/images/slider/main-home/4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide5 {
-  background: url(assets/frontend/images/slider/main-home/5.jpg);
+  background: url('/assets/frontend/images/slider/main-home/5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.style1 .slider-content.slide6 {
-  background: url(assets/frontend/images/slider/main-home/6.jpg);
+  background: url('/assets/frontend/images/slider/main-home/6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .rs-slider.style1 .slider-content.slide7 {
-  background: url(assets/frontend/images/slider/main-home/7.jpg);
+  background: url('/assets/frontend/images/slider/main-home/7.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -4835,37 +4835,37 @@ body .modal-backdrop {
   margin-bottom: 65px;
 }
 .rs-slider.main-home .slider-content.slide1 {
-  background: url(assets/frontend/images/slider/main-home/1.jpg);
+  background: url('/assets/frontend/images/slider/main-home/1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide2 {
-  background: url(assets/frontend/images/slider/main-home/2.jpg);
+  background: url('/assets/frontend/images/slider/main-home/2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide3 {
-  background: url(assets/frontend/images/slider/main-home/3.jpg);
+  background: url('/assets/frontend/images/slider/main-home/3.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide4 {
-  background: url(assets/frontend/images/slider/main-home/4.jpg);
+  background: url('/assets/frontend/images/slider/main-home/4.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide5 {
-  background: url(assets/frontend/images/slider/main-home/5.jpg);
+  background: url('/assets/frontend/images/slider/main-home/5.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .rs-slider.main-home .slider-content.slide6 {
-  background: url(assets/frontend/images/slider/main-home/6.jpg);
+  background: url('/assets/frontend/images/slider/main-home/6.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5003,7 +5003,7 @@ body .modal-backdrop {
   z-index: -1;
 }
 .breadcrumbs1 {
-  background-image: url(assets/frontend/images/breadcrumbs/1.jpg);
+  background-image: url('/assets/frontend/images/breadcrumbs/1.jpg');
   background-size: cover;
   background-position: center;
   background-position: center top;
@@ -5170,7 +5170,7 @@ body .modal-backdrop {
 }
 .rs-about.style2 .about-intro {
   border-radius: 3px;
-  background: url(assets/frontend/images/bg/about-intro-bg.jpg);
+  background: url('/assets/frontend/images/bg/about-intro-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 88px 50px 95px;
@@ -5308,7 +5308,7 @@ body .modal-backdrop {
   float: left;
 }
 .rs-about.style5 {
-  background-image: url(assets/frontend/images/bg/about-bg.jpg);
+  background-image: url('/assets/frontend/images/bg/about-bg.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -5428,7 +5428,7 @@ body .modal-backdrop {
   margin-top: -70px;
 }
 .rs-about.video-img {
-  background: url(assets/frontend/images/video/bg.png);
+  background: url('/assets/frontend/images/video/bg.png');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -5713,7 +5713,7 @@ body .modal-backdrop {
   margin: 0;
 }
 .rs-services.home12-style {
-  background: url(assets/frontend/images/bg/home12/services-bg.jpg);
+  background: url('/assets/frontend/images/bg/home12/services-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -6003,7 +6003,7 @@ body .modal-backdrop {
   background-position: center;
 }
 .rs-categories.home11-style .img-part {
-  background: url(assets/frontend/images/categories/home11/1.jpg);
+  background: url('/assets/frontend/images/categories/home11/1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -7274,7 +7274,7 @@ body .modal-backdrop {
 .free-course-contact {
   margin: 0px;
   padding: 40px 50px 50px;
-  background: url(assets/frontend/images/bg/course-contact-bg.jpg);
+  background: url('/assets/frontend/images/bg/course-contact-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8296,7 +8296,7 @@ body .modal-backdrop {
   opacity: 0.7;
 }
 .why-choose-us.style3 {
-  background: url(assets/frontend/images/bg/home12/why-learn-bg.jpg);
+  background: url('/assets/frontend/images/bg/home12/why-learn-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9022,7 +9022,7 @@ body .modal-backdrop {
 }
 .rs-testimonial.style3 .testi-item {
   background-color: #f3f8f9;
-  background-image: url(assets/frontend/images/testimonial/cloud-pattern.png);
+  background-image: url('/assets/frontend/images/testimonial/cloud-pattern.png');
   background-repeat: no-repeat;
   background-size: 130%;
   background-position: 0 70px;
@@ -9132,7 +9132,7 @@ body .modal-backdrop {
   margin: -10px;
 }
 .rs-testimonial.style5 {
-  background: url(assets/frontend/images/bg/testi-bg.jpg);
+  background: url('/assets/frontend/images/bg/testi-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -9301,7 +9301,7 @@ body .modal-backdrop {
   margin: -10px;
 }
 .rs-testimonial.main-home {
-  background: url(assets/frontend/images/bg/main-home.jpg);
+  background: url('/assets/frontend/images/bg/main-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9557,7 +9557,7 @@ body .modal-backdrop {
   background: #ff5421 !important;
 }
 .rs-testimonial.home12-style {
-  background: url(assets/frontend/images/bg/home12/testi-bg.jpg);
+  background: url('/assets/frontend/images/bg/home12/testi-bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -11112,7 +11112,7 @@ body .modal-backdrop {
   background: red;
 }
 .rs-event.home12style {
-  background: url(assets/frontend/images/bg/home12/event-bg.jpg);
+  background: url('/assets/frontend/images/bg/home12/event-bg.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -11597,7 +11597,7 @@ body .modal-backdrop {
   transform: translate(-50%, -50%);
 }
 .rs-cta.style1 {
-  background: url(assets/frontend/images/bg/pattern1.png);
+  background: url('/assets/frontend/images/bg/pattern1.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -11662,29 +11662,29 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.style2 .partition-bg-wrap:before {
-  background: url(assets/frontend/images/cta/style2/left-bg.jpg);
+  background: url('/assets/frontend/images/cta/style2/left-bg.jpg');
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .rs-cta.style2 .partition-bg-wrap:after {
-  background: url(assets/frontend/images/cta/style2/right-bg.jpg);
+  background: url('/assets/frontend/images/cta/style2/right-bg.jpg');
   right: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }
 .rs-cta.style2 .partition-bg-wrap.inner-page:before {
-  background: url(assets/frontend/images/cta/style2/left-bg2.png);
+  background: url('/assets/frontend/images/cta/style2/left-bg2.png');
   background-size: cover;
 }
 .rs-cta.style2 .partition-bg-wrap.inner-page:after {
-  background: url(assets/frontend/images/cta/style2/right-bg2.png);
+  background: url('/assets/frontend/images/cta/style2/right-bg2.png');
   background-size: cover;
 }
 .rs-cta.style3 {
-  background: url(assets/frontend/images/bg/pattern1.png);
+  background: url('/assets/frontend/images/bg/pattern1.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -11723,13 +11723,13 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.style7 .partition-bg-wrap:after {
-  background: url(assets/frontend/images/cta/home7/1.png);
+  background: url('/assets/frontend/images/cta/home7/1.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .rs-cta.style7 .partition-bg-wrap:before {
-  background: url(assets/frontend/images/cta/home7/2.png);
+  background: url('/assets/frontend/images/cta/home7/2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11750,13 +11750,13 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.main-home .partition-bg-wrap:after {
-  background: url(assets/frontend/images/cta/home1.jpg);
+  background: url('/assets/frontend/images/cta/home1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .rs-cta.main-home .partition-bg-wrap:before {
-  background: url(assets/frontend/images/cta/main-home.jpg);
+  background: url('/assets/frontend/images/cta/main-home.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   right: 0;
@@ -11776,7 +11776,7 @@ body .modal-backdrop {
   z-index: -1;
 }
 .rs-cta.home9-style .partition-bg-wrap:after {
-  background: url(assets/frontend/images/cta/covid-19.jpg);
+  background: url('/assets/frontend/images/cta/covid-19.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11822,14 +11822,14 @@ body .modal-backdrop {
   padding-right: 15px;
 }
 .rs-cta.home11-style {
-  background: url(assets/frontend/images/cta/home11.jpg);
+  background: url('/assets/frontend/images/cta/home11.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
 }
 .rs-cta.home-style14 {
   max-width: 700px;
   margin: 0 auto;
-  background: url(assets/frontend/images/bg/home14/cta.jpg);
+  background: url('/assets/frontend/images/bg/home14/cta.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -11865,7 +11865,7 @@ body .modal-backdrop {
 }
 .rs-cta.effects-layer .effects-bg.apply-bg {
   background-color: #F9F7F8;
-  background-image: url(assets/frontend/images/cta/style3/1-2.png);
+  background-image: url('/assets/frontend/images/cta/style3/1-2.png');
   background-position: bottom right;
   background-repeat: no-repeat;
   border-radius: 4px 4px 4px 4px;
@@ -11873,7 +11873,7 @@ body .modal-backdrop {
 }
 .rs-cta.effects-layer .effects-bg.enroll-bg {
   background-color: #F9F7F8;
-  background-image: url(assets/frontend/images/cta/style3/2.png);
+  background-image: url('/assets/frontend/images/cta/style3/2.png');
   background-position: bottom right;
   background-repeat: no-repeat;
   border-radius: 4px 4px 4px 4px;
@@ -11995,7 +11995,7 @@ body .modal-backdrop {
     24. Newsletter Section CSS
 ---------------------------------------*/
 .rs-newsletter.style1 .newsletter-wrap {
-  background: url(assets/frontend/images/bg/newsletter-bg.jpg);
+  background: url('/assets/frontend/images/bg/newsletter-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 3px;
@@ -12040,7 +12040,7 @@ body .modal-backdrop {
   background: #2e4778;
 }
 .rs-newsletter.style1.modify1 .newsletter-wrap {
-  background: url(assets/frontend/images/bg/newslatter-bg15.jpg);
+  background: url('/assets/frontend/images/bg/newslatter-bg15.jpg');
 }
 .rs-newsletter.style1.modify1 .newsletter-wrap .newsletter-form button {
   background: #ff5421;
@@ -12049,7 +12049,7 @@ body .modal-backdrop {
   background: #ff5421;
 }
 .rs-newsletter.style2 {
-  background: url(assets/frontend/images/bg/newsletter-bg2.jpg);
+  background: url('/assets/frontend/images/bg/newsletter-bg2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12097,7 +12097,7 @@ body .modal-backdrop {
   background: #2db4de;
 }
 .rs-newsletter.style2.home11-style {
-  background: url(assets/frontend/images/bg/home11-news.jpg);
+  background: url('/assets/frontend/images/bg/home11-news.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12581,7 +12581,7 @@ body .modal-backdrop {
   padding: 20px 14px 35px !important;
 }
 .rs-faq-part.style1 .img-part {
-  background: url(assets/frontend/images/faq/1.png);
+  background: url('/assets/frontend/images/faq/1.png');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -14632,7 +14632,7 @@ body .modal-backdrop {
   background: rgba(255, 255, 255, 0.1);
 }
 .rs-footer.home9-style.main-home.home13-style {
-  background: url(assets/frontend/images/bg/home13/footer.jpg);
+  background: url('/assets/frontend/images/bg/home13/footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
